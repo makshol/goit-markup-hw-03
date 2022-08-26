@@ -19,6 +19,22 @@ font-size: 14px;
 letter-spacing: 0.03em;
 }
 
+/* reset */
+html {
+    box-sizing: border-box;
+}
+*,
+*::after
+*::before {
+    box-sizing: inherit;
+}
+
+/* utils */
+.container {
+    width: 1200px;
+    
+}
+
 ul {
     list-style: none;
 }
