@@ -69,6 +69,21 @@ address {
   outline: 1px solid tomato;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .section-title {
     font-size: 36px;
     line-height: 1.17;
@@ -151,12 +166,16 @@ align-items: center;
 
 /* Main */
 .hero {
-  color: var(--hero-text-color);
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -174,10 +193,10 @@ align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
 }
 
 .button-all {
@@ -212,10 +231,22 @@ align-items: center;
 .image-portfolio {
   background-color: url(/images/portfolio/our-people.jpg);
 }
+
+/* advatages */
 .advantages-title {
   line-height: 1.14;
   text-transform: uppercase;
   font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.advantages-list {
+display: flex;
+gap: 30px;
+}
+
+.advantages-item {
+    width: calc((100% - 90px) / 4);
 }
 .advantages-text {
   color: var(--undertitle-text-color);
